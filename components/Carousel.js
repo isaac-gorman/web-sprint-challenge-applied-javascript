@@ -22,3 +22,47 @@
     <div class="right-button"> > </div>
   </div>
 */
+
+function Carousel() {
+  const carousel = document.createElement("div");
+  const img1 = document.createElement("img");
+  const img2 = document.createElement("img");
+  const img3 = document.createElement("img");
+  const img4 = document.createElement("img");
+  const leftButton = document.createElement("div");
+  const rightButton = document.createElement("div");
+
+  carousel.setAttribute("class", "carousel");
+  img1.setAttribute(
+    "src",
+    "/Users/isaacgorman/Desktop/dev/web-sprint-challenge-applied-javascript/assets/bones.jpg"
+  );
+  img2.setAttribute(
+    "src",
+    "/Users/isaacgorman/Desktop/dev/web-sprint-challenge-applied-javascript/assets/bones.jpg"
+  );
+  img3.setAttribute(
+    "src",
+    "/Users/isaacgorman/Desktop/dev/web-sprint-challenge-applied-javascript/assets/bones.jpg"
+  );
+  img4.setAttribute(
+    "src",
+    "/Users/isaacgorman/Desktop/dev/web-sprint-challenge-applied-javascript/assets/bones.jpg"
+  );
+  leftButton.setAttribute("class", "left-button");
+  rightButton.setAttribute("class", "right-button");
+
+  carousel.appendChild(leftButton);
+  carousel.appendChild(img1);
+  carousel.appendChild(img2);
+  carousel.appendChild(img3);
+  carousel.appendChild(img4);
+  carousel.appendChild(rightButton);
+
+  // carousel-container
+  const carouselContainer = document.querySelector(".carousel-container");
+
+  return carouselContainer.append(carousel);
+}
+
+Carousel();
